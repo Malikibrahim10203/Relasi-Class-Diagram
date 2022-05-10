@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 class Produk:
     
     def set_nama(self, nama : str):
@@ -13,6 +13,6 @@ class Produk:
     def get_harga()->float:
         return self.__harga
     
-    
+    @abstractmethod
     def show_produk(self):
         pass
